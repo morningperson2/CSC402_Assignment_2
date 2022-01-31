@@ -23,13 +23,13 @@ int main()
     testStrings.push_back(temp);
   }
 
- // resultString = longestLength(testStrings);
+  resultString = longestLength(testStrings);
 
-  std::cout << "The longest string(s) is: ";
+  std::cout << std::endl << "The longest string(s) is: " << resultString[0];
 
-  for (int i = 0; i < testStrings.size(); i++)
+  for (int i = 1; i < resultString.size(); i++)
   {
-    std::cout << testStrings[i] << ", ";
+    std::cout << ", " << resultString[i];
   }
 
   std::cout << std::endl;
